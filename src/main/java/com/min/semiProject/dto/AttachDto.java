@@ -1,7 +1,5 @@
 package com.min.semiProject.dto;
 
-import com.google.protobuf.Timestamp;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -15,11 +13,13 @@ import lombok.ToString;
 @Setter
 @Builder
 @ToString
-public class UserDto {
-    private int userId;
-    private String userPw;
-    private String userEmail;
-    private String userName;
-    private Timestamp changeDt;
-    private String profileImg;
-  }
+public class AttachDto {
+
+  private int attachId;
+  private int noticeId;
+  private String filePath;
+  private String originalFilename;
+  private String filesystemName;
+  private int downloadCount;
+
+}
