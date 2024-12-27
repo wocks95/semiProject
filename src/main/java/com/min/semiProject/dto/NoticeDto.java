@@ -1,6 +1,6 @@
 package com.min.semiProject.dto;
 
-import com.google.protobuf.Timestamp;
+import java.sql.Timestamp;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,17 +9,19 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @Builder
 @ToString
-public class UserDto {
-    private int userId;
-    private String userPw;
-    private String userEmail;
-    private String userName;
-    private Timestamp changeDt;
-    private String profileImg;
-  }
+public class NoticeDto {
+
+  private int noticeId;
+  private UserDto userDto;
+  private String noticeTitle;
+  private String noticeContents;
+  private Timestamp createdAt;
+  private int attachCount;
+}

@@ -12,6 +12,8 @@
     <typeAlias type="com.min.semiProject.dto.UserDto" alias="UserDto"/>
     <typeAlias type="com.min.semiProject.dto.BlogDto" alias="BlogDto"/>
     <typeAlias type="com.min.semiProject.dto.CommentDto" alias="CommentDto"/>
+    <typeAlias type="com.min.semiProject.dto.NoticeDto" alias="NoticeDto"/>
+    <typeAlias type="com.min.semiProject.dto.AttachDto" alias="AttachDto"/>
   </typeAliases>
 
 </configuration>
