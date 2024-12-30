@@ -1,0 +1,63 @@
+git&github.com(협업 방법)
+
+*원격레파지토리를 열면 바로 'pom.xml'이 보여야함, 다른 폴더가 보이면 안됨
+*main에서는 개발 하면 안됨
+
+
+타인의 원격레파지토리를 자신의 원격레파지토리로 가져갑니다.(fork)
+fork한 원격레파지토리를 자신의 로컬레파지토리로 만듭니다.  (clone)
+D: (bash 열기)
+ ㄴapp
+
+
+D 드라이브에서 git bash 열어서 'git clone 원격주소' 입력
+그 후에 'cd 해당폴더'를 입력하여 해당 폴더로 이동  
+'git branch' => 해당 브랜치가 뭐가 있는지 확인
+'git branch 하위브랜치'=> 하위브랜치 생성
+'git checkout 하위브랜치'=> 만든 하위브랜치로 이동
+
+'app'으로 이동 -> .txt하나 생성
+'git add .'=> 개발이 완료되면 원격지에 올리기
+'git commit -m ----'=> commit 진행
+'git push origin 하위브랜치' => 메인에 올라가지않음, 하위브랜치로 원격지에 올림
+'원격지에 있는 pull requests' 클릭 후 자료를 보내서 하위브랜치에서 데이터가 합치길 요청함
+관리자는 충돌되는 파일이나 데이터가 없을경우 'Marge pull request' 누르기
+'confirm merge' 클릭 -> 병합 완료
+
+----main 브랜치 병합하기!
+git bash 열기
+ls -> 데이터확인 
+git pull origin 하위브랜치 => 원격지에서 데이터 받아오기
+git checkgout main => 메인브랜치로 이동
+git merge 하위브랜치(*메인브랜치에서 해야함) => 데이터가 메인(로컬지)으로 병합됨
+git add . => git commit -m ---- => git push origin main
+-----각자 만든 파일 공유
+원격지에서 Sync fork -> Update branch 클릭(수정된 파일이 업데이트 됨)
+-----로컬지에도 업데이트
+메인브랜치에서 내려받기
+
+
+
+++ D: (D 드라이브)에 semiProject 폴더 생성하기
+
+$ cd semiProject (해당 프로젝트로 이동)
+
+$ git status (현재 상태 보기)
+
+$ git init (초기화)
+
+$ git remote add origin 원격주소
+
+++ https://www.toptal.com/developers/gitignore/ 사이트에서 windows,eclipse,java,maven 검색 후 해당프로젝트에 파일 만들기
+
+$ git add .gitignore
+
+$ git commit -m 20241227
+
+$ git push origin main
+
+$ git add .
+
+$ git commit -m 기능
+
+$ git push origin main
