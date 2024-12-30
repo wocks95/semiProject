@@ -15,7 +15,7 @@ import lombok.RequiredArgsConstructor;
 public class BlogDaoImpl implements IBlogDao {
   
   // SqlSession 활용
-  private SqlSessionTemplate template;
+  private final SqlSessionTemplate template;
  
   @Override
   public List<BlogDto> selectBlogList(Map<String, Object> map) {
