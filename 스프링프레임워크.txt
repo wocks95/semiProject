@@ -1,0 +1,59 @@
+
+
+
+-Map<>
+ :Collection 인터페이스를 상속받지는 않지만 Collection으로 분류됨
+ :Map은 인터페이스이며 Key와 Value의 쌍으로 이루어진 데이터의 집합
+ :인터페이스를 구현하기 위해선 구현 클래스가 따로 필요하지만
+  스프링 프레임워크는 상황에 맞게 자동으로 구현되는것 같다.
+ :Map<Key(String) , Value(Object)>
+
+-HttpServletRequest
+ :자바 서블릿의 API의 일부
+ :HTTP 요청 정보를 편리하게 사용할 수 있도록 도와주는 객체이자 인터페이스다.
+
+-MultipartHttpServletRequest (다중파일업로드)
+ :HttpServletRequest의 자식 인터페이스
+ :프론트엔드에서 enctype="multipart/form-data"로 넘어오는 요청이 있어야함
+
+--------------------프론트엔드----------------------------------------------- ↓
+
+-<button> 태그의 disabled 속성
+ : 해당 버튼이 비활성화됨을 명시함
+ : 명시된 버튼은 사용x, 사용자가 클릭할 수도 없음
+
+-<c:forEach>
+ :반복문을 태그 형식으로 사용할 수 있는 태그
+ :<c:forEach items="배열,리스트 등" var="변수명" varStatus="인덱스 변수명">
+	${변수}, 태그
+  </c:forEach>
+ :items 속성과 var 속성은 꼭 입력해야함
+
+
+-location.href = '${contextPath}/user/login.form?url=' + location.href;
+			지금 현재 페이지 값을 변경하지 말라는 뜻 ↗
+
+-02X= 16진수 관련 코드 (두자리수를 채우되, 없으면 0을 채울것)
+
+-<fmt:formatDate>
+ :날짜 정보를 담고 있는 객체를 포맷팅하여 출력할 때 사용하는 태그
+
+* com.min.app.dto 패키지 만들기
+
+* 패키지명Dto 클래스 만들기
+* DTO : Data Transfer Object. 데이터 전송 객체. 주로 Java 와 DB 간 데이터 교환을 위해서 사용하는 객체를 의미합니다.
+
+* com.min.app.dao 패키지 만들기
+* DAO : DataBase Access Object. 데이터베이스에 접속해서 CRUD 작업을 수행하는 역할을 수행하는 객체를 의미합니다.
+
+* JdbcConnection 클래스 만들기 (데이터베이스 접속 및 접속 해제용) 또는 myBatis 사용하기
+
+* I패키지명Dao 인터페이스 만들기 (인터페이스명은 I로 시작할 수 있습니다. Java 에서는 선택적으로 적용할 수 있습니다.)
+
+* 패키지명DaoImpl 클래스 만들기 (인터페이스를 구현하는 클래스명은 Impl 로 끝나는 것이 정석입니다.)
+
+* I패키지명Service 인터페이스 만들기
+
+* 패키지명ServiceImpl 클래스 만들기 
+
+* src/test/java 패티지에 ContactTest 클래스 만들기

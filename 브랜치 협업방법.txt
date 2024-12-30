@@ -7,7 +7,7 @@ git&github.com(협업 방법)
 타인의 원격레파지토리를 자신의 원격레파지토리로 가져갑니다.(fork)
 fork한 원격레파지토리를 자신의 로컬레파지토리로 만듭니다.  (clone)
 D: (bash 열기)
- ㄴapp
+ ㄴ해당폴더(ex.app)
 
 
 D 드라이브에서 git bash 열어서 'git clone 원격주소' 입력
@@ -46,9 +46,9 @@ $ git status (현재 상태 보기)
 
 $ git init (초기화)
 
-$ git remote add origin 원격주소
+$ git remote add origin 원격주소 <- 그 전에 원격지에서 레파지토리 생성하기
 
-++ https://www.toptal.com/developers/gitignore/ 사이트에서 windows,eclipse,java,maven 검색 후 해당프로젝트에 파일 만들기
+++ https://www.toptal.com/developers/gitignore/ 사이트에서 windows,eclipse,java,maven 검색 후 해당프로젝트에 파일 만들기 (.gitignore)
 
 $ git add .gitignore
 
